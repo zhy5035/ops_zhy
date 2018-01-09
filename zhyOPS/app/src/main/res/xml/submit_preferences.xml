@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:speedreader="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <PreferenceCategory android:title="提交作业">
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="input_jobtest"
+            android:title="作业名称"
+            android:singleLine="true"
+            android:summary="@string/Job_name"
+            />
+
+        <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+            android:defaultValue="@integer/font_size_default_value"
+            android:key="preference_arltime"
+            android:title="@string/arrival_time"
+            speedreader:vnt_maxValue="@integer/font_size_max_value"
+            speedreader:vnt_minValue="0"/>
+        <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+            android:defaultValue="10"
+            android:key="preference_totaltime"
+            android:title="@string/total_time"
+            android:summary="10"
+            speedreader:vnt_maxValue="50"
+            speedreader:vnt_minValue="0"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/memory_require"
+            android:entries="@array/memory_require_entries"
+            android:entryValues="@array/memory_require_entry_values"
+            android:key="memory_rq"
+            android:summary="15KB"
+            android:title="@string/memory_require" />
+        <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+            android:defaultValue="1"
+            android:key="disk_rq"
+            android:title="@string/disk_require"
+            speedreader:vnt_maxValue="4"
+            speedreader:vnt_minValue="0"/>
+        <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+            android:defaultValue="1"
+            android:key="preference_priority"
+            android:title="@string/job_priority"
+            speedreader:vnt_maxValue="10"
+            speedreader:vnt_minValue="0"/>
+        <com.vanniktech.vntnumberpickerpreference.VNTNumberPickerPreference
+            android:defaultValue="1"
+            android:key="preference_timeslice"
+            android:title="@string/time_slice"
+            speedreader:vnt_maxValue="10"
+            speedreader:vnt_minValue="0"/>
+
+
+    </PreferenceCategory>
+
+    <com.hfad.zhyops.MyPreferenceCategory android:title="调度算法">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="算法选择"
+            android:entries="@array/filter_size_entries"
+            android:entryValues="@array/filter_size_entry_values"
+            android:key="@string/submit_pro_alg"
+            android:summary="先来先服务算法(FCFS)"
+            android:title="进程调度" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="算法选择"
+            android:entries="@array/filter_time_entries"
+            android:entryValues="@array/filter_time_entry_values"
+            android:key="@string/submit_job_alg"
+            android:summary="先来先服务算法(FCFS)"
+            android:title="作业调度" />
+    </com.hfad.zhyops.MyPreferenceCategory>
+    <PreferenceCategory android:title="">
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="">
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="">
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

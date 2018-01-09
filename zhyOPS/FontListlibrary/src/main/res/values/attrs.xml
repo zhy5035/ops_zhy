@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="vnt_FontListPreference">
+        <attr name="vnt_fontDirectory" format="string"/>
+        <attr name="vnt_fontPreviewString" format="string"/>
+    </declare-styleable>
+
+</resources>

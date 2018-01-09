@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">zhyOPS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="oper_submit">提交设置</string>
+    <string name="layout_perinput">输入界面</string>
+    <string name="result_table">调度结果</string>
+    
+    <string name="input_job">输入作业</string>
+    <string name="job_name">作业名称</string>
+    <string name="arrival_time">到达时间</string>
+    <string name="total_time">运行时间</string>
+    <string name="job_priority">优先级</string>
+    <string name="time_slice">时间片大小</string>
+    <string name="algorithm">算法选择</string>
+    <string name = "memory_require">内存需要</string>
+    <string name="disk_require">磁带机数</string>
+    <string name="Job_name">job12</string>
+    <string name="testEdit"></string>
+    <string name="input_jobtest">jobName</string>
+
+    <string name="submit_job_alg">submit_job</string>
+    <string name="submit_pro_alg">submit_pro</string>
+
+
+    <item name="font_size_default_value" type="integer">25</item>
+    <item name="font_size_min_value" type="integer">1</item>
+    <item name="font_size_max_value" type="integer">60</item>
+
+</resources>

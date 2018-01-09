@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_size_entries">
+        <item>先来先服务算法(FCFS)</item>
+        <item>简单轮转算法(RR)</item>
+        <item>静态优先数优先(SPS)</item>
+        <item>动态优先数优先(DPS)</item>
+
+    </string-array>
+
+    <string-array name="filter_size_entry_values">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="filter_time_entries">
+        <item>先来先服务算法(FCFS)</item>
+        <item>最短作业优先(SJF)</item>
+        <item>响应比高者优先(HRRN)</item>
+
+    </string-array>
+
+    <string-array name="filter_time_entry_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string-array name="memory_require_entries">
+        <item>15KB</item>
+        <item>30KB</item>
+        <item>50KB</item>
+        <item>65KB</item>
+        <item>80KB</item>
+        <item>95KB</item>
+
+    </string-array>
+
+    <string-array name="memory_require_entry_values">
+        <item>15</item>
+        <item>30</item>
+        <item>50</item>
+        <item>65</item>
+        <item>80</item>
+        <item>95</item>
+    </string-array>
+</resources>
